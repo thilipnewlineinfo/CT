@@ -1,21 +1,198 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<header>
+  <div class="header-part">
+    <div class="container">
+      <div class="logo-sec">
+        <a class="navbar-brand" routerLink="/" >
+          <img src="../assets/img/logo.png" alt="">
+        </a>
+      </div>
+      <nav class="navbar navbar-expand-sm navbar-light"> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#collapse_Navbar"><span class="navbar-toggler-icon custom-toggler"></span></button> 
+        <div class="collapse navbar-collapse" id="collapse_Navbar"> 
+          <ul class="navbar-nav"> 
+            <li class="nav-item"><a class="nav-link" routerLink="/" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{exact:true}" (click)="setDocTitle('Home')">Home</a></li> 
+            <li class="nav-item"><a class="nav-link" routerLink="/About" [routerLinkActive]="['active']">About us</a></li> 
+            <li class="nav-item"><a class="nav-link" routerLink="/Products" [routerLinkActive]="['active']">Products</a></li> 
+            <li class="nav-item"><a class="nav-link" routerLink="/gallery" [routerLinkActive]="['active']">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" routerLink="/contact-us" [routerLinkActive]="['active']" >Contact Us</a></li> 
+          </ul> 
+        </div> 
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- Page Content -->
+<!-- <div class="container">
+<h1 class="mt-4">Logo Nav by Start Bootstrap</h1>
+<p><a routerLink='/About' target="_blank"> The logo in the navbar </a>is now a default Bootstrap feature in Bootstrap 4! Make sure to set the width and height of the logo within the HTML or with CSS. For best results, use an SVG image as your logo.</p>
+</div> -->
+<!-- /.container -->
+
+  
 
 <router-outlet></router-outlet>
+<!-- Footer -->
+<footer class="page-footer font-small blue pt-4">
+  <div class="fot-top-sec">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>follow us</h2>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li><a href="#"><img src="../assets/img/S_icon_1.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/img/S_icon_2.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/img/S_icon_3.png" alt=""></a></li>
+          <li><a href="#"><img src="../assets/img/S_icon_4.png" alt=""></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="fot_Sec">
+<div class="container-fluid">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-sm-6 mt-md-0 mt-3">
+
+        <!-- Content -->
+        <div class="fot_sec1">
+          <h2>Contact Us</h2>
+          <div class="se_ara">
+            <h5 class="text-uppercase">Footer</h5>
+            <div class="icon_sec">
+              <div class="icon_txt_lt"><img src="../assets/img/F_icon_1.png" alt=""></div>
+              <div class="icon_txt_rt"><p>Old No. 66/ New No. 72,<br>Pettaiyanchatram<br>Pondicherry - 605 009.</p></div>
+            </div>
+            <div class="icon_sec">
+              <div class="icon_txt_lt"><img src="../assets/img/F_icon_2.png" alt=""></div>
+              <div class="icon_txt_rt"><p><a href="tel:2271645">2271645, 4202050,</a></p></div>
+            </div>
+            <div class="icon_sec">
+              <div class="icon_txt_lt"><img src="../assets/img/F_icon_3.png" alt=""></div>
+              <div class="icon_txt_rt"><p><a href="tel:4202051">4202051</a></p></div>
+            </div>
+            <div class="icon_sec">
+              <div class="icon_txt_lt"><img src="../assets/img/F_icon_4.png" alt=""></div>
+              <div class="icon_txt_rt"><p><a href="matilto:credtechindia@yahoo.com">credtechindia@yahoo.com</a></p></div>
+            </div>
+            <div class="icon_sec">
+              <div class="icon_txt_lt"><img src="../assets/img/F_icon_5.png" alt=""></div>
+              <div class="icon_txt_rt"><p><a href="www.credtechindia.com">www.credtechindia.com</a></p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+      <!-- <hr class="clearfix w-100 d-md-none pb-3"> -->
+
+      <!-- Grid column -->
+      <div class="col-lg-3 col-sm-6 mb-md-0 mb-3">
+
+        <!-- Links -->        
+        <div class="fot_sec1">
+          <h2 style="color: transparent;">Contact</h2>
+          <div class="se_ara">
+          <h5 class="text-uppercase">factory</h5>
+          <div class="icon_sec">
+            <div class="icon_txt_lt"><img src="../assets/img/F_icon_1.png" alt=""></div>
+            <div class="icon_txt_rt"><p>Factory  R.S. No. 5/13 & 5/15, <br>Mylam Road, Sedarapet, <br>Pondicherry - 605 111.</p></div>
+          </div>
+          <div class="icon_sec">
+            <div class="icon_txt_lt"><img src="../assets/img/F_icon_2.png" alt=""></div>
+            <div class="icon_txt_rt"><p><a href="(0413) 2671208, 2671218">(0413) 2671208, 2671218</a></p></div>
+          </div>
+          </div>
+        </div>
+        
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-lg-2 col-sm-6 mb-md-0 mb-3">
+        <!-- Links -->                
+        <div class="fot_sec1">
+          <h2 style="color: transparent;">Contact</h2>
+          <div class="se_ara">
+          <h5 class="text-uppercase">Quick Links</h5>          
+            <ul>
+              <li><a routerLink="/">Home</a></li>
+              <li><a routerLink="/About">About Us</a></li>
+              <li><a routerLink="/Products">Products</a></li>
+              <li><a routerLink="/gallery">Gallery</a></li>
+              <li><a routerLink="/contact-us">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-sm-6 mb-md-0 mb-3">
+
+        <!-- Links -->                      
+        <div class="fot_sec1">
+          <h2 class="rques">Request your quote now</h2>
+          <div class="se_ara np">
+          <!-- <h5 class="text-uppercase">Quick Links</h5>     -->
+          <div class="fm_Se" >
+            <form [formGroup]="form" (submit)="form.valid ? submit(form.value) : false">
+              <div class="row">
+                <div class="col-md-12">  
+                       <input type="text" placeholder="Email" formControlName="email">
+                      <div *ngIf="email.invalid && (email.dirty || email.touched)"
+                        class="alert alert-danger">
+                      <div *ngIf="email.errors.required">
+                      Email is required.
+                      </div>
+                      <!-- <div *ngIf="email.errors.minlength">
+                      Name must be at least 4 characters long.
+                      </div> -->
+                      <!-- <div *ngIf="email.errors.forbiddenName">
+                      Name cannot be Bob.
+                      </div> -->
+                      </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6"><input type="text" placeholder="Name" formControlName="name"></div>
+                <div class="col-md-6"><input type="text" placeholder="Phone" formControlName="phone"></div>
+              </div>
+              <div class="row">
+                <div class="col-md-12"><textarea placeholder="Message" formControlName="message"></textarea></div>
+              </div>
+              <div class="row">
+                <div class="col-md-12"><button type="submit">Submit</button></div>
+              </div>        
+              
+            </form>
+          </div>
+          </div>
+        </div>
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  
+  <!-- Copyright -->
+  </div>  
+</div>
+<div class="fot_bot_sec_area">
+  <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2019 CREDTECHINDIA. ALL RIGHTS RESERVED.
+      powered by: <a href="https://www.newlineinfo.in/" target="_blank;"><img src="../assets/img/newlineinfo_logo.png" alt=""> NEWLINEINFO </a>
+    </div>
+</div>
+</footer>
+<!-- Footer -->

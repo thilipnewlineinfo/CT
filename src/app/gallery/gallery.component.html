@@ -1,0 +1,33 @@
+<div class="banner_sec">
+    <img src="../assets/img/Gallery-banner.jpg" alt="Pro-banner">
+</div>
+
+    <div class="gal_banner_bottom">
+        <div class="container"> 
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="gal-title">
+                        <h2>GRAIN PATTERNS</h2>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="row">                
+            <div class="my-app-custom-plain-container-with-desc">
+                <ng-container *ngFor="let img of imagesRect">
+                    <div class="col-sm-3">
+                        <figure class="my-app-custom-image-with-desc">
+                        <img [src]="img.modal.img"
+                        (click)="openImageModalRowDescription(img)"/>
+                        <figcaption class="description">{{img.modal.description ? img.modal.description : ''}}
+                        </figcaption>
+                        </figure>
+                    </div>
+                </ng-container>
+            </div>
+              <ks-modal-gallery [id]="207" [modalImages]="imagesRect"
+                                [plainGalleryConfig]="customPlainGalleryRowDescConfig"></ks-modal-gallery>
+            </div>
+        </div>
+    </div>

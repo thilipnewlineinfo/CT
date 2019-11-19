@@ -1,0 +1,292 @@
+<div class="banner_sec">
+    <!-- <img src="../assets/img/banner.jpg" alt=""> -->
+    <ngb-carousel *ngIf="images">
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[0]" alt="Random first slide">
+          </div>
+          <div class="carousel-caption">
+            <!-- <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            <a href="#">TEST</a> -->
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[1]" alt="Random second slide">
+          </div>
+          <div class="carousel-caption">
+            <!-- <h3>Second slide label</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> -->
+          </div>
+        </ng-template>
+        <ng-template ngbSlide>
+          <div class="picsum-img-wrapper">
+            <img [src]="images[2]" alt="Random third slide">
+          </div>
+          <div class="carousel-caption">
+            <!-- <h3>Third slide label</h3>
+            <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+          </div>
+        </ng-template>
+      </ngb-carousel>
+</div>
+<div class="banner_bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="who_Sec">
+                    <h2>Who we are</h2>
+                    <p>Credential Technologies (Pvt.) Limited was established in the year 2002 to manufacture Polyurethane finished leather with a overall capacity of 6 million square feet per annum.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="thre_sec_area" [class.hovered]="mouseOvered1" 
+                (mouseover)="mouseOvered1=true"
+                (mouseout)="mouseOvered1=false">
+                    <div class="thre_sec_area_in">
+                            <img src="../assets/img/{{mouseOvered1?'WWA_Ho_Icon_01':'WWA_Icon_01'}}.png" alt="">
+                        <h3>our mission</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Sed do eiusmod tempor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thre_sec_area" [class.hovered]="mouseOvered2" 
+                (mouseover)="mouseOvered2=true"
+                (mouseout)="mouseOvered2=false">
+                    <div class="thre_sec_area_in">
+                            <img src="../assets/img/{{mouseOvered2?'WWA_Ho_Icon_02':'WWA_Icon_02'}}.png" alt="">
+                        <h3>classic products</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Sed do eiusmod tempor</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="thre_sec_area" [class.hovered]="mouseOvered3" 
+                (mouseover)="mouseOvered3=true"
+                (mouseout)="mouseOvered3=false">
+                    <div class="thre_sec_area_in">
+                            <img src="../assets/img/{{mouseOvered3?'WWA_Ho_Icon_03':'WWA_Icon_03'}}.png" alt="">
+                        <h3>competitive prices</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, Sed do eiusmod tempor</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="para_sec1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="abt_sec_in">
+                    <p>Credential Technologies Pvt. Ltd. was started in the year 2003 with an aim of manufacturing higher end PU Leathers from Wet Blue Splits and lower end grain hides.</p><p>br> Using the state of art imported machinery the desired quality output is manufactured. The capacity of the unit is 300,000 to 400,000 sq. feet per month. At present the unit caters to the need of raw material suppliers (Leather Suppliers) to all the leading leather goods exporters of the country.</p><p>It also exports finished leathers to China, Italy and United Kingdom.</p>
+                    <a routerLink="/About">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="our_prod_sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="who_Sec">
+                    <h2>Our products</h2>
+                    <p>Polyurethane finished leather has a fine film of textured Polyurethane on the top and specially crusted split or lowend grain hides at the bottom. It has the grain look, feel, flex, breathablity and drape of the top grain leather. In addition, it has better abrasion resistance and water resistance characteristics.</p>
+                    <p>PU finished leather is a ideal material for the following.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class=" col-lg-3 col-sm-6">                
+                <div class="fr_sec">
+                    <div class="fr_sec_in">
+                        <div class="content">
+                            <a href="#" target="_blank">
+                              <div class="content-overlay"></div>
+                              <img class="content-image" src="../../assets/img/HM_prod_01.png">
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3>
+                                <p class="content-text"><a routerLink="/Products">View More</a></p>
+                              </div>
+                            </a>
+                          </div>                       
+                    </div>
+                    <p class="btn_txta"><a  routerLink="/Products">LEATHER bags</a></p>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-sm-6">                
+                <div class="fr_sec">
+                    <div class="fr_sec_in">
+                        <div class="content">
+                            <a href="#" target="_blank">
+                              <div class="content-overlay"></div>
+                              <img class="content-image" src="../../assets/img/HM_prod_02.png">
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3>
+                                <p class="content-text"><a routerLink="/Products">View More</a></p>
+                              </div>
+                            </a>
+                          </div>                       
+                    </div>
+                    <p class="btn_txta"><a routerLink="/Products">leather wallets</a></p>
+                </div>
+            </div>
+            <div class=" col-lg-3 col-sm-6">                
+                <div class="fr_sec">
+                    <div class="fr_sec_in">
+                        <div class="content">
+                            <a href="#" target="_blank">
+                              <div class="content-overlay"></div>
+                              <img class="content-image" src="../../assets/img/HM_prod_03.png">
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3>
+                                <p class="content-text"><a routerLink="/Products">View More</a></p>
+                              </div>
+                            </a>
+                          </div>                       
+                    </div>
+                    <p class="btn_txta"><a routerLink="/Products">leather  accessories</a></p>
+                </div>               
+            </div>
+            <div class=" col-lg-3 col-sm-6">                
+                <div class="fr_sec">
+                    <div class="fr_sec_in">
+                        <div class="content">
+                            <a href="#" target="_blank">
+                              <div class="content-overlay"></div>
+                              <img class="content-image" src="../../assets/img/HM_prod_04.png">
+                              <div class="content-details fadeIn-bottom">
+                                <h3 class="content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3>
+                                <p class="content-text"><a  routerLink="/Products">View More</a></p>
+                              </div>
+                            </a>
+                          </div>                       
+                    </div>
+                    <p class="btn_txta"><a  routerLink="/Products">PU leather SHOES</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="gallery_sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="who_Sec">
+                    <h2>gallery</h2>
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="container-fluid">
+        <div class="gallery_sec">        
+            <div class="row">
+                <div class="col-md-4">                                
+                    <div class="fr_sec nest">
+                        <div class="fr_sec_in">
+                            <div class="content">
+                                <a href="#" target="_blank">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="../assets/img/h1.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <!-- <h3 class="content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3> -->
+                                    <p class="content-text"><a routerLink="/gallery">View More</a></p>
+                                </div>
+                                </a>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">                                
+                    <div class="fr_sec nest">
+                        <div class="fr_sec_in">
+                            <div class="content">
+                                <a href="#" target="_blank">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="../assets/img/h2.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <!-- <h3 class="content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3> -->
+                                    <p class="content-text"><a routerLink="/gallery">View More</a></p>
+                                </div>
+                                </a>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">                                
+                    <div class="fr_sec nest">
+                        <div class="fr_sec_in">
+                            <div class="content">
+                                <a href="#" target="_blank">
+                                <div class="content-overlay"></div>
+                                <img class="content-image" src="../assets/img/h3.jpg">
+                                <div class="content-details fadeIn-bottom">
+                                    <!-- <h3 class="content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3> -->
+                                    <p class="content-text"><a routerLink="/gallery">View More</a></p>
+                                </div>
+                                </a>
+                            </div>                       
+                        </div>
+                    </div>
+                </div>
+            </div>
+                   
+            <div class="row">
+                    <div class="col-md-4">                                
+                        <div class="fr_sec nest">
+                            <div class="fr_sec_in">
+                                <div class="content">
+                                    <a href="#" target="_blank">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/img/h4.jpg">
+                                    <div class="content-details fadeIn-bottom">
+                                        <!-- <h3 class="content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3> -->
+                                        <p class="content-text"><a routerLink="/gallery">View More</a></p>
+                                    </div>
+                                    </a>
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">                                
+                        <div class="fr_sec nest">
+                            <div class="fr_sec_in">
+                                <div class="content">
+                                    <a href="#" target="_blank">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/img/h5.jpg">
+                                    <div class="content-details fadeIn-bottom">
+                                        <!-- <h3 class="content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3> -->
+                                        <p class="content-text"><a routerLink="/gallery">View More</a></p>
+                                    </div>
+                                    </a>
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">                                
+                        <div class="fr_sec nest">
+                            <div class="fr_sec_in">
+                                <div class="content">
+                                    <a href="#" target="_blank">
+                                    <div class="content-overlay"></div>
+                                    <img class="content-image" src="../assets/img/h6.jpg">
+                                    <div class="content-details fadeIn-bottom">
+                                        <!-- <h3 class="content-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</h3> -->
+                                        <p class="content-text"><a routerLink="/gallery">View More</a></p>
+                                    </div>
+                                    </a>
+                                </div>                       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div>
+    </div>
+</div>
